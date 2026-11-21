@@ -1,0 +1,9 @@
+source: games_metadata/full-text-meta-dataset-clean.csv
+image_directory: games_metadata/full-2-screenshots-dataset-clean
+required: [appid, name, genres]
+min_images: 500
+images_per_game: 2
+width: 448
+height: 252
+validation_fraction: 0.2
+seed: 42

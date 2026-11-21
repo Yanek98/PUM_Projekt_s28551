@@ -1,0 +1,13 @@
+{
+  "originals": 14704,
+  "augmented_train": 11762,
+  "games_with_repaired_genre_list": 261,
+  "original_split": {
+    "train": 11762,
+    "val": 2942
+  },
+  "games_per_split": {
+    "train": 5881,
+    "val": 1471
+  }
+}

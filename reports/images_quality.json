@@ -1,0 +1,71 @@
+{
+  "dataset": "images",
+  "scope": "full input",
+  "engine": "Great Expectations 1.5.11",
+  "success": true,
+  "checks": [
+    {
+      "metric": "image_count",
+      "observed": 14704,
+      "minimum": 500,
+      "maximum": null,
+      "success": true
+    },
+    {
+      "metric": "duplicate_filenames",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "unmatched_records",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "games_with_wrong_image_count",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "wrong_width",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "wrong_height",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "invalid_jpeg",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "missing_genres",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "missing_name",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+source: gaming_profiles/steam/games.csv
+required: [gameid, title, developers, publishers, genres, supported_languages, release_date]
+min_rows: 1
+max_rows: 200000
+max_columns: 10
+max_missing_genres_fraction: 0.10
+max_missing_title_fraction: 0.01
+validation_fraction: 0.2
+languages: [English, Polish, German, French, Spanish - Spain, Russian, Japanese]
+seed: 42

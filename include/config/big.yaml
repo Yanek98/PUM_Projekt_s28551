@@ -1,0 +1,6 @@
+source: games_recomendations/recommendations.csv
+required: [app_id, helpful, funny, date, is_recommended, hours, user_id, review_id]
+min_rows: 1000000
+eda_sample: 10000
+# Zachowaj czas gry do 99,5. percentyla włącznie.
+hours_quantile: 0.995

@@ -1,0 +1,10 @@
+{
+  "input": 98248,
+  "output": 92699,
+  "dropped_missing_target": 5549,
+  "split": {
+    "train": 74159,
+    "val": 18540
+  },
+  "target": "primary_genre"
+}

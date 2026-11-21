@@ -1,0 +1,81 @@
+{
+  "dag_id": "ingest_eda_prep",
+  "run_id": "etap_1_lokalnie",
+  "state": "success",
+  "start_date": "2026-11-21 19:31:34.968561",
+  "end_date": "2026-11-21 19:46:21.140245",
+  "tasks": [
+    {
+      "task_id": "big.eda",
+      "state": "success",
+      "start_date": "2026-11-21 19:39:27.620049",
+      "end_date": "2026-11-21 19:39:49.264522"
+    },
+    {
+      "task_id": "big.ingest",
+      "state": "success",
+      "start_date": "2026-11-21 19:32:01.341731",
+      "end_date": "2026-11-21 19:33:09.026572"
+    },
+    {
+      "task_id": "big.prep",
+      "state": "success",
+      "start_date": "2026-11-21 19:40:27.939931",
+      "end_date": "2026-11-21 19:41:45.459066"
+    },
+    {
+      "task_id": "big.quality",
+      "state": "success",
+      "start_date": "2026-11-21 19:33:35.969057",
+      "end_date": "2026-11-21 19:34:22.231917"
+    },
+    {
+      "task_id": "images.eda",
+      "state": "success",
+      "start_date": "2026-11-21 19:41:54.084144",
+      "end_date": "2026-11-21 19:42:04.744232"
+    },
+    {
+      "task_id": "images.ingest",
+      "state": "success",
+      "start_date": "2026-11-21 19:34:30.670270",
+      "end_date": "2026-11-21 19:38:52.605110"
+    },
+    {
+      "task_id": "images.prep",
+      "state": "success",
+      "start_date": "2026-11-21 19:42:11.274000",
+      "end_date": "2026-11-21 19:46:18.833839"
+    },
+    {
+      "task_id": "images.quality",
+      "state": "success",
+      "start_date": "2026-11-21 19:39:56.751827",
+      "end_date": "2026-11-21 19:40:03.538178"
+    },
+    {
+      "task_id": "tabular.eda",
+      "state": "success",
+      "start_date": "2026-11-21 19:38:59.018867",
+      "end_date": "2026-11-21 19:39:21.154149"
+    },
+    {
+      "task_id": "tabular.ingest",
+      "state": "success",
+      "start_date": "2026-11-21 19:31:41.468682",
+      "end_date": "2026-11-21 19:31:45.200092"
+    },
+    {
+      "task_id": "tabular.prep",
+      "state": "success",
+      "start_date": "2026-11-21 19:40:09.604701",
+      "end_date": "2026-11-21 19:40:21.667385"
+    },
+    {
+      "task_id": "tabular.quality",
+      "state": "success",
+      "start_date": "2026-11-21 19:33:18.202952",
+      "end_date": "2026-11-21 19:33:28.897767"
+    }
+  ]
+}

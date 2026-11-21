@@ -1,0 +1,57 @@
+{
+  "dataset": "tabular",
+  "scope": "full input",
+  "engine": "Great Expectations 1.5.11",
+  "success": true,
+  "checks": [
+    {
+      "metric": "rows",
+      "observed": 98248,
+      "minimum": 1,
+      "maximum": 200000,
+      "success": true
+    },
+    {
+      "metric": "column_count",
+      "observed": 7,
+      "minimum": 7,
+      "maximum": 10,
+      "success": true
+    },
+    {
+      "metric": "duplicate_ids",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "invalid_ids",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "missing_date",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "missing_title_fraction",
+      "observed": 3.0534972722091036e-05,
+      "minimum": 0,
+      "maximum": 0.01,
+      "success": true
+    },
+    {
+      "metric": "unlabelled_genre_fraction",
+      "observed": 0.05647952121162772,
+      "minimum": 0,
+      "maximum": 0.1,
+      "success": true
+    }
+  ]
+}

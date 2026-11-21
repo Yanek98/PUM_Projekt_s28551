@@ -1,0 +1,8 @@
+{
+  "input": 41154794,
+  "output": 40949323,
+  "removed_high_hours": 205471,
+  "hours_quantile": 0.995,
+  "max_hours_kept": 928.9,
+  "target": "is_recommended"
+}

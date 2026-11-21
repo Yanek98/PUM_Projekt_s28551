@@ -1,0 +1,8 @@
+/projekt-polaczony/
+/raw_data/
+/data/
+/.env
+__pycache__/
+*.pyc
+/mlruns/*
+!/mlruns/.gitkeep

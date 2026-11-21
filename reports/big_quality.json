@@ -1,0 +1,64 @@
+{
+  "dataset": "big",
+  "scope": "full input",
+  "engine": "Great Expectations 1.5.11",
+  "success": true,
+  "checks": [
+    {
+      "metric": "rows",
+      "observed": 41154794,
+      "minimum": 1000000,
+      "maximum": null,
+      "success": true
+    },
+    {
+      "metric": "missing_or_duplicate_review_ids",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "invalid_ids",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "invalid_hours",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "invalid_votes",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "missing_date",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "missing_target",
+      "observed": 0,
+      "minimum": 0,
+      "maximum": 0,
+      "success": true
+    },
+    {
+      "metric": "target_classes",
+      "observed": 2,
+      "minimum": 2,
+      "maximum": 2,
+      "success": true
+    }
+  ]
+}

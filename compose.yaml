@@ -1,0 +1,32 @@
+name: pum-steam
+services:
+  airflow:
+    build: .
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__CORE__DAGS_FOLDER: /project/dags
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "false"
+      AIRFLOW__WEBSERVER__WORKERS: "2"
+      AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: "20"
+      GX_ANALYTICS_ENABLED: "false"
+      PYTHONPATH: /project
+      STEAM_RAW_DIR: /datasets
+      MPLBACKEND: Agg
+      OPENBLAS_NUM_THREADS: "1"
+    working_dir: /project
+    volumes:
+      - ./dags:/project/dags:ro
+      - ./src:/project/src:ro
+      - ./include:/project/include:ro
+      - ./data:/project/data
+      - ./reports:/project/reports
+      - ${STEAM_RAW_DIR:-./projekt-polaczony/Projekt_1_wybror-datasetow/raw_data}:/datasets:ro
+      - airflow-state:/opt/airflow
+    ports:
+      - "127.0.0.1:8080:8080"
+    command: standalone
+volumes:
+  airflow-state:
