@@ -1,0 +1,39 @@
+{
+  "dag_id": "automl",
+  "run_id": "etap_2_steam",
+  "state": "success",
+  "start_date": "2026-11-23 16:20:46.750023",
+  "end_date": "2026-11-23 16:22:45.985932",
+  "tasks": [
+    {
+      "task_id": "check_inputs",
+      "state": "success",
+      "start_date": "2026-11-21 20:13:11.985356",
+      "end_date": "2026-11-21 20:13:18.686808"
+    },
+    {
+      "task_id": "publish",
+      "state": "success",
+      "start_date": "2026-11-23 16:22:02.925752",
+      "end_date": "2026-11-23 16:22:44.409793"
+    },
+    {
+      "task_id": "train_big",
+      "state": "success",
+      "start_date": "2026-11-23 16:20:52.850242",
+      "end_date": "2026-11-23 16:21:52.830245"
+    },
+    {
+      "task_id": "train_images",
+      "state": "success",
+      "start_date": "2026-11-21 20:13:25.547270",
+      "end_date": "2026-11-22 10:19:32.162054"
+    },
+    {
+      "task_id": "train_tabular",
+      "state": "success",
+      "start_date": "2026-11-23 16:16:45.213697",
+      "end_date": "2026-11-23 16:17:39.198274"
+    }
+  ]
+}

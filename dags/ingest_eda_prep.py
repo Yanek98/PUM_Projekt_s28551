@@ -1,5 +1,7 @@
 import pendulum
+from airflow.datasets import Dataset
 from airflow.decorators import dag, task, task_group
+from src.assets import artifact_uri
 
 
 @task
@@ -28,7 +30,8 @@ def prep(dataset):
 
 @task_group
 def dataset_tasks(dataset):
-    ingest(dataset) >> quality(dataset) >> eda(dataset) >> prep(dataset)
+    prepared = prep.override(outlets=[Dataset(artifact_uri(dataset))])(dataset)
+    ingest(dataset) >> quality(dataset) >> eda(dataset) >> prepared
 
 
 @dag(dag_id="ingest_eda_prep", start_date=pendulum.datetime(2025, 11, 1, tz="UTC"),

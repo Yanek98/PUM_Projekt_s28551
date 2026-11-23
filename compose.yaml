@@ -16,6 +16,9 @@ services:
       STEAM_RAW_DIR: /datasets
       MPLBACKEND: Agg
       OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "3"
+      MLFLOW_TRACKING_URI: file:///project/mlruns
+      MLFLOW_ENABLE_ARTIFACTS_PROGRESS_BAR: "false"
     working_dir: /project
     volumes:
       - ./dags:/project/dags:ro
@@ -23,10 +26,20 @@ services:
       - ./include:/project/include:ro
       - ./data:/project/data
       - ./reports:/project/reports
+      - ./mlruns:/project/mlruns
       - ${STEAM_RAW_DIR:-./projekt-polaczony/Projekt_1_wybror-datasetow/raw_data}:/datasets:ro
       - airflow-state:/opt/airflow
     ports:
       - "127.0.0.1:8080:8080"
     command: standalone
+  mlflow:
+    image: pum-steam-airflow
+    pull_policy: never
+    entrypoint: ["mlflow"]
+    command: ["ui", "--backend-store-uri", "file:///project/mlruns", "--host", "0.0.0.0", "--port", "5000", "--workers", "1"]
+    volumes:
+      - ./mlruns:/project/mlruns
+    ports:
+      - "127.0.0.1:5000:5000"
 volumes:
   airflow-state:
